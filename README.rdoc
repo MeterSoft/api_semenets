@@ -1,0 +1,17 @@
+== Rails API
+
+Admin: Jon / 1111
+Content provider: Joni  / 1111
+Content provider: Toni / 1111
+
+== Github
+
+client: https://github.com/MeterSoft/api_semenets
+
+server: https://github.com/MeterSoft/grape_api
+
+== Heroku
+
+client: http://grape-ua.herokuapp.com/
+
+server: http://grape-server.herokuapp.com/

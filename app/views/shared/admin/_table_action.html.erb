@@ -1,0 +1,6 @@
+<div class="action">
+  <%= button_to 'pablished', published_admin_pages_path, remote: true, method: :get %>
+  <%= button_to 'unpablished', unpublished_admin_pages_path, remote: true, method: :get %>
+  <%= button_to 'refresh', admin_pages_path, remote: true, method: :get %>
+  <%= button_to 'add', new_admin_page_path, remote: true, method: :get %>
+</div>

@@ -1,0 +1,21 @@
+<p>
+  <span>title:</span>
+  <span><%= @page['title'] %></span>
+</p>
+<p>
+  <span>content:</span>
+  <span><%= @page['content'] %></span>
+</p>
+<p>
+  <span>published:</span>
+  <span><%= @page['published'] %></span>
+</p>
+<p>
+  <span>created:</span>
+  <span><%= @page['created_at'] %></span>
+</p>
+<p>
+  <span>total words:</span>
+  <span><%= @count['count'] %></span>
+</p>
+<%= button_to 'back', content_provider_pages_path, remote: true, method: :get %>

@@ -1,0 +1,6 @@
+<tr>
+  <td><%= link_to page['title'], content_provider_page_path(page['id']), remote: true, method: :get %></td>
+  <td><%= page['content'] %></td>
+  <td><%= page['published_on'] %></td>
+  <td><%= render partial: 'shared/content_provider/action', locals: { page: page } %></td>
+</tr>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ApiSemenets</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<span class='error'><%= flash[:error] %></span>
+<span class='success'><%= flash[:notice] %></span>
+
+<div class="panel">
+  <%= yield %>
+</div>
+
+<div class="login">
+  <% if current_user %>
+    <%= link_to 'Log out', session_path(current_user['id']), method: :delete %>
+  <% else %>
+    <%= link_to 'Login', new_session_path %>
+  <% end %>
+</div>
+
+</body>
+</html>

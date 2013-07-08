@@ -1,0 +1,10 @@
+<table class="table-panel" width="100%">
+<tr>
+  <th> title </th>
+  <th> content </th>
+  <th> published_on </th>
+  <th> action </th>
+</tr>
+  <%= render partial: 'shared/admin/tr', collection: @pages, as: :page %>
+</table>
+<%= render partial: 'shared/admin/table_action' %>

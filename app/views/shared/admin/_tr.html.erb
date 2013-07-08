@@ -1,0 +1,6 @@
+<tr>
+  <td><%= link_to page['title'], admin_page_path(page['id']), remote: true, method: :get %></td>
+  <td><%= page['content'] %></td>
+  <td><%= page['published_on'] %></td>
+  <td><%= render partial: 'shared/admin/action', locals: { page: page } %></td>
+</tr>

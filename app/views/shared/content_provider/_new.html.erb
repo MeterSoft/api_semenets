@@ -1,0 +1,7 @@
+<h1>New page</h1>
+<%= form_tag content_provider_pages_path, remote: true do %>
+  <%= text_field_tag 'page[:title]', nil, placeholder: 'Title' %>
+  <%= text_field_tag 'page[:content]', nil, placeholder: 'Content' %>
+  <%= submit_tag 'Create' %>
+<% end %>
+<%= button_to 'back', content_provider_pages_path, remote: true, method: :get %>

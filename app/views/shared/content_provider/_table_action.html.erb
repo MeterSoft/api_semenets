@@ -1,0 +1,6 @@
+<div class="action">
+  <%= button_to 'pablished', published_content_provider_pages_path, remote: true, method: :get %>
+  <%= button_to 'unpablished', unpublished_content_provider_pages_path, remote: true, method: :get %>
+  <%= button_to 'refresh', content_provider_pages_path, remote: true, method: :get %>
+  <%= button_to 'add', new_content_provider_page_path, remote: true, method: :get %>
+</div>

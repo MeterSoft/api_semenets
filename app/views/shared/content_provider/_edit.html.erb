@@ -1,0 +1,7 @@
+<h1>Edit page</h1>
+<%= form_tag content_provider_page_path(@page['id']), remote: true, method: :put do %>
+  <%= text_field_tag 'page[:title]', @page['title'], placeholder: 'Title' %>
+  <%= text_field_tag 'page[:content]', @page['content'], placeholder: 'Content' %>
+  <%= submit_tag 'Update' %>
+<% end %>
+<%= button_to 'back', content_provider_pages_path, remote: true, method: :get %>

@@ -1,0 +1,11 @@
+<table class="table-panel" width="100%">
+<tr>
+  <th> title </th>
+  <th> content </th>
+  <th> published_on </th>
+  <th> action </th>
+</tr>
+  <%= render partial: 'shared/content_provider/tr', collection: @pages, as: :page %>
+</table>
+
+<%= render partial: 'shared/content_provider/table_action' %>
